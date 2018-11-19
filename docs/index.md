@@ -6,4 +6,28 @@ layout: home
 title: Docker PHP Alpine
 ---
 
-[My Inspiration](https://github.com/TrafeX/docker-php-nginx) using PHP-FPM 7.1 & Nginx 1.12 setup for Docker, build on [Alpine Linux](http://www.alpinelinux.org/).
+Purpose
+============
+Based on this [Inspiration](https://github.com/TrafeX/docker-php-nginx) I wanted to create something current.
+
+Description
+============
+
+Apache, PHP-FPM, NGINX and SupervisorD for Docker build on [Alpine Linux](http://www.alpinelinux.org/).
+
+Usage
+============
+
+Add this to line 1 of your Dockerfile to build a docker web app:
+
+     FROM laniksj/docker-php-alpine
+     COPY . /var/www/html
+
+That will copy all the web content to your docker container.
+Then you can service it from any Docker orchestration tool.<br>
+Example: AWS Elastic Container Service (ECS) or Kubernetes.
+
+Bugs
+============
+
+Please report any bugs or issues you find. Thanks!
