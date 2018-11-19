@@ -14,8 +14,15 @@ Add this to line 1 of your Dockerfile to build a docker web app:
      COPY . /var/www/html
 
 That will copy all the web content to your docker container.<br>
-Then you can use it as a service from any Docker orchestration tool.<br>
-Example: [AWS Elastic Container Service (ECS)](https://aws.amazon.com/ecs/) or [Kubernetes](https://kubernetes.io).
+Then you can use it as a service from any Docker orchestration tool.
+
+Some Examples:
+
+[AWS Elastic Container Service (ECS)](https://aws.amazon.com/ecs/) -- The Amazon EC2 Container Service (ECS) supports Docker containers and lets you run applications on a managed cluster of [Amazon EC2](https://aws.amazon.com/ec2/) instances.<br>
+[Azure Container Service (ACS)](https://azure.microsoft.com/en-us/blog/azure-container-service-preview/) -- ACS lets you create a cluster of virtual machines that act as container hosts along with master machines that are used to manage your application containers.<br>
+[Cloud Foundry’s Diego](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html) -- Diego is a container management system that combines a scheduler, runner, and health manager. It is a rewrite of the Cloud Foundry runtime.<br>
+
+[Kubernetes](https://kubernetes.io)
 
 ## Bugs
 Please report any bugs or issues you find. Thanks!
