@@ -13,7 +13,8 @@ Add this to line 1 of your Dockerfile to build a docker web app:
      FROM laniksj/docker-php-alpine
      COPY . /var/www/html
 
-That will copy all the web content and then you can service it from any Docker orchestration tool.
+That will copy all the web content to your docker container.<br>
+Then you can use it as a service from any Docker orchestration tool.<br>
 Example: AWS Elastic Container Service (ECS) or Kubernetes.
 
 ## Bugs
