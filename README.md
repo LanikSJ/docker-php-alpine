@@ -15,7 +15,7 @@ Add this to line 1 of your Dockerfile to build a docker web app:
 
 That will copy all the web content to your docker container.<br>
 Then you can use it as a service from any Docker orchestration tool.<br>
-Example: AWS Elastic Container Service (ECS) or Kubernetes.
+Example: [AWS Elastic Container Service (ECS)](https://aws.amazon.com/ecs/) or [Kubernetes](https://kubernetes.io).
 
 ## Bugs
 Please report any bugs or issues you find. Thanks!
