@@ -18,11 +18,16 @@ Then you can use it as a service from any Docker orchestration tool.
 
 Some Examples:
 
-[AWS Elastic Container Service (ECS)](https://aws.amazon.com/ecs/) -- The Amazon EC2 Container Service (ECS) supports Docker containers and lets you run applications on a managed cluster of [Amazon EC2](https://aws.amazon.com/ec2/) instances.<br>
-[Azure Container Service (ACS)](https://azure.microsoft.com/en-us/blog/azure-container-service-preview/) -- ACS lets you create a cluster of virtual machines that act as container hosts along with master machines that are used to manage your application containers.<br>
-[Cloud Foundry’s Diego](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html) -- Diego is a container management system that combines a scheduler, runner, and health manager. It is a rewrite of the Cloud Foundry runtime.<br>
+[AWS Elastic Container Service (ECS)](https://aws.amazon.com/ecs/)<br>
+[Azure Container Service (ACS)](https://azure.microsoft.com/en-us/blog/azure-container-service-preview/)<br>
+[Cloud Foundry’s Diego](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html)<br>
+[CoreOS Fleet](https://coreos.com/using-coreos/clustering/)<br>
+[Docker Swarm](https://www.docker.com/products/docker-swarm)<br>
+[Google Container Engine](https://cloud.google.com/container-engine/)<br>
+[Kubernetes](https://kubernetes.io)<br>
+[Mesosphere Marathon](https://mesosphere.github.io/marathon/)<br>
 
-[Kubernetes](https://kubernetes.io)
+Source: [8 Container Orchestration Tools to Know](https://www.linux.com/NewS/8-OPEN-SOURCE-CONTAINER-ORCHESTRATION-TOOLS-KNOW)
 
 ## Bugs
 Please report any bugs or issues you find. Thanks!
