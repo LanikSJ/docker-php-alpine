@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:latest
 
 # Install packages
 RUN apk --no-cache add php7 php7-fpm php7-mysqli php7-json php7-openssl php7-curl \
@@ -18,6 +18,9 @@ COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Add application
 RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
+
+# Copy Test Page
+COPY test/index.html /var/www/html
 
 EXPOSE 80
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
