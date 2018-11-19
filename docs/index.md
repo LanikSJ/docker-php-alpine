@@ -24,7 +24,7 @@ Add this to line 1 of your Dockerfile to build a docker web app:
      COPY . /var/www/html
 
 That will copy all the web content to your docker container.
-Then you can use it as a service from any Docker orchestration tool.
+Then you can use it as a service from any Docker orchestration tools.
 
 Some Examples:
 
