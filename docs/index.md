@@ -15,7 +15,7 @@ Description
 
 Apache, PHP-FPM, NGINX and SupervisorD for Docker build on [Alpine Linux](http://www.alpinelinux.org/).
 
-Usage
+Docker
 ============
 
 Add this to line 1 of your Dockerfile to build a docker web app:
@@ -26,7 +26,8 @@ Add this to line 1 of your Dockerfile to build a docker web app:
 That will copy all the web content to your docker container.
 Then you can use it as a service from any Docker orchestration tools.
 
-Some Examples:
+Examples
+============
 
 [AWS Elastic Container Service (ECS)](https://aws.amazon.com/ecs/)  
 [Azure Container Service (ACS)](https://azure.microsoft.com/en-us/blog/azure-container-service-preview/)  
@@ -41,5 +42,4 @@ Source: [8 Container Orchestration Tools to Know](https://www.linux.com/NewS/8-O
 
 Bugs
 ============
-
 Please report any bugs or issues you find. Thanks!
