@@ -10,7 +10,7 @@ Based on this [Inspiration](https://github.com/TrafeX/docker-php-nginx) I wanted
 Apache, PHP-FPM, NGINX and SupervisorD for Docker build on [Alpine Linux](http://www.alpinelinux.org/).
 
 ## Docker
-![](https://img.shields.io/docker/automated/laniksj/docker-php-alpine.svg?style=flat)[![Docker Repository on Quay](https://quay.io/repository/laniksj/docker-php-alpine/status "Docker Repository on Quay")](https://quay.io/repository/laniksj/docker-php-alpine)![](https://img.shields.io/docker/pulls/laniksj/docker-php-alpine.svg?style=flat)[![](https://images.microbadger.com/badges/image/laniksj/docker-php-alpine.svg)](https://microbadger.com/images/laniksj/docker-php-alpine "Get your own image badge on microbadger.com")
+![](https://img.shields.io/docker/cloud/automated/laniksj/docker-php-alpine.svg?style=flat)[![Docker Repository on Quay](https://quay.io/repository/laniksj/docker-php-alpine/status "Docker Repository on Quay")](https://quay.io/repository/laniksj/docker-php-alpine)![](https://img.shields.io/docker/pulls/laniksj/docker-php-alpine.svg?style=flat)[![](https://images.microbadger.com/badges/image/laniksj/docker-php-alpine.svg)](https://microbadger.com/images/laniksj/docker-php-alpine "Get your own image badge on microbadger.com")
 
 Add this to line 1 of your Dockerfile to build a docker web app:
 
