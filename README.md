@@ -36,4 +36,4 @@ Source: [8 Container Orchestration Tools to Know](https://www.linux.com/NewS/8-O
 Please report any bugs or issues you find. Thanks!
 
 ## License
-[![GPLv3 license](https://badgen.net/github/license/LanikSJ/docker-php-alpine)](http://perso.crans.org/besson/LICENSE.html)
+[![GPLv3 license](https://img.shields.io/github/license/LanikSJ/ubo-filters.svg?color=brightgreen)](http://perso.crans.org/besson/LICENSE.html)
