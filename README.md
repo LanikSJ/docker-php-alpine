@@ -1,6 +1,5 @@
 # Docker Apache PHP and SupervisorD using Alpine
 [![Build Status](https://travis-ci.org/LanikSJ/docker-php-alpine.svg?branch=master)](https://travis-ci.org/LanikSJ/docker-php-alpine)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=LanikSJ/docker-php-alpine)](https://dependabot.com)
 [![Known Vulnerabilities](https://snyk.io/test/github/LanikSJ/docker-php-alpine/badge.svg?targetFile=/docs/Gemfile.lock)](https://snyk.io/test/github/LanikSJ/docker-php-alpine?targetFile=/docs/Gemfile.lock)
 
 ## Purpose
