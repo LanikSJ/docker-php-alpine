@@ -23,10 +23,11 @@ Apache, PHP-FPM, NGINX and SupervisorD for Docker build on [Alpine Linux](http:/
 
 ## Docker
 
-[![Docker Cloud](https://img.shields.io/docker/cloud/automated/laniksj/docker-php-alpine.svg?style=flat)](https://hub.docker.com/u/laniksj)
+[![Docker Repository on Docker Hub](https://img.shields.io/docker/cloud/automated/laniksj/docker-php-alpine.svg?style=flat)](https://hub.docker.com/r/laniksj/docker-php-alpine)
 [![Docker Repository on Quay](https://quay.io/repository/laniksj/docker-php-alpine/status "Docker Repository on Quay")](https://quay.io/repository/laniksj/docker-php-alpine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/laniksj/docker-php-alpine.svg?style=flat)](https://hub.docker.com/u/laniksj)
-[![Docker Layers](https://images.microbadger.com/badges/image/laniksj/docker-php-alpine.svg)](https://microbadger.com/images/laniksj/docker-php-alpine "Get your own image badge on microbadger.com")
+![Docker Pulls](https://img.shields.io/docker/pulls/laniksj/docker-php-alpine.svg?style=flat)
+![Docker Size](https://img.shields.io/docker/image-size/laniksj/docker-php-alpine?sort=date)
+![Docker Layers](https://img.shields.io/microbadger/layers/laniksj/docker-php-alpine)
 
 Add this to line 1 of your Dockerfile to build a docker web app:
 
