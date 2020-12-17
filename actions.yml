@@ -1,0 +1,6 @@
+# action.yml
+name: 'Docker PHP Alpine'
+description: 'Docker PHP Alpine Container'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

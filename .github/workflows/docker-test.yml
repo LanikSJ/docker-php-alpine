@@ -1,0 +1,15 @@
+name: CI
+on: [push]
+
+jobs:
+  docker_php_alpine_job:
+    runs-on: ubuntu-latest
+    name: Docker PHP Alpine Tests
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Test Docker Container
+        uses: ./ # Uses an action in the root directory
+        id: docker-php-alpine
