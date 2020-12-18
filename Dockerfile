@@ -2,7 +2,7 @@ FROM alpine:3.12.3
 
 # Install packages
 RUN apk --no-cache update && apk --no-cache add curl php7 php7-fpm \
-    php7-mysqli php7-json php7-openssl php7-curl php7-zlib php7-xml \
+  php7-mysqli php7-json php7-openssl php7-curl php7-zlib php7-xml \
 	php7-phar php7-intl php7-dom php7-xmlreader php7-ctype \
 	php7-mbstring php7-gd nginx supervisor
 
