@@ -1,4 +1,4 @@
-FROM alpine:3.13.4
+FROM alpine:3.13.5
 
 # Install packages
 RUN apk --no-cache add php7 php7-fpm php7-mysqli php7-json php7-openssl php7-curl \
