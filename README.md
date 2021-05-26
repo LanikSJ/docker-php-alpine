@@ -1,7 +1,5 @@
 # Docker Apache PHP and SupervisorD using Alpine
 
-[![Build Status](https://travis-ci.org/LanikSJ/docker-php-alpine.svg?branch=master)](https://travis-ci.org/LanikSJ/docker-php-alpine)
-
 -   [Purpose](#purpose)
 -   [Description](#description)
 -   [Docker](#docker)
