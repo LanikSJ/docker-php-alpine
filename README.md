@@ -25,7 +25,6 @@ Apache, PHP-FPM, NGINX and SupervisorD for Docker build on [Alpine Linux](http:/
 [![Docker Repository on Quay](https://quay.io/repository/laniksj/docker-php-alpine/status "Docker Repository on Quay")](https://quay.io/repository/laniksj/docker-php-alpine)
 ![Docker Pulls](https://img.shields.io/docker/pulls/laniksj/docker-php-alpine.svg?style=flat)
 ![Docker Size](https://img.shields.io/docker/image-size/laniksj/docker-php-alpine?sort=date)
-![Docker Layers](https://img.shields.io/microbadger/layers/laniksj/docker-php-alpine)
 
 Add this to line 1 of your Dockerfile to build a docker web app:
 
