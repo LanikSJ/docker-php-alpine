@@ -1,5 +1,7 @@
 # Docker Apache PHP and SupervisorD using Alpine
 
+[![Actions Status](https://github.com/LanikSJ/docker-php-alpine/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/LanikSJ/docker-php-alpine/actions)
+
 -   [Purpose](#purpose)
 -   [Description](#description)
 -   [Docker](#docker)
