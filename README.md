@@ -1,7 +1,5 @@
 # Docker Apache PHP and SupervisorD using Alpine
 
-[![Actions Status](https://github.com/LanikSJ/docker-php-alpine/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/LanikSJ/docker-php-alpine/actions)
-
 -   [Purpose](#purpose)
 -   [Description](#description)
 -   [Docker](#docker)
@@ -23,7 +21,7 @@ Apache, PHP-FPM, NGINX and SupervisorD for Docker build on [Alpine Linux](http:/
 
 ## Docker
 
-[![Docker Repository on Docker Hub](https://img.shields.io/docker/cloud/automated/laniksj/docker-php-alpine.svg?style=flat)](https://hub.docker.com/r/laniksj/docker-php-alpine)
+[![Actions Status](https://github.com/LanikSJ/docker-php-alpine/workflows/Docker%20Publish/badge.svg)](https://github.com/LanikSJ/docker-php-alpine/actions)
 [![Docker Repository on Quay](https://quay.io/repository/laniksj/docker-php-alpine/status "Docker Repository on Quay")](https://quay.io/repository/laniksj/docker-php-alpine)
 ![Docker Pulls](https://img.shields.io/docker/pulls/laniksj/docker-php-alpine.svg?style=flat)
 ![Docker Size](https://img.shields.io/docker/image-size/laniksj/docker-php-alpine?sort=date)
