@@ -28,7 +28,7 @@ Apache, PHP-FPM, NGINX and SupervisorD for Docker build on [Alpine Linux](http:/
 
 Add this to line 1 of your Dockerfile to build a docker web app:
 
-     FROM laniksj/docker-php-alpine
+     FROM ghcr.io/laniksj/docker-php-alpine
      COPY . /var/www/html
 
 That will copy all the web content to your docker container.  
