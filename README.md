@@ -14,7 +14,7 @@ Based on this [Inspiration](https://github.com/TrafeX/docker-php-nginx) I wanted
 
 ## Description
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3fd126b036ab4be2a61ab822b982247e)](https://www.codacy.com/app/Lanik/docker-php-alpine?utm_source=github.com&utm_medium=referral&utm_content=LanikSJ/docker-php-alpine&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d0aec14feac549ed8bd931fff77313e5)](https://www.codacy.com/gh/LanikSJ/docker-php-alpine/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LanikSJ/docker-php-alpine&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/LanikSJ/docker-php-alpine/branch/master/graph/badge.svg)](https://codecov.io/gh/LanikSJ/docker-php-alpine)
 
 Apache, PHP-FPM, NGINX and SupervisorD for Docker build on [Alpine Linux](http://www.alpinelinux.org/).
