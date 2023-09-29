@@ -1,4 +1,4 @@
-FROM alpine:3.18.3
+FROM alpine:3.18.4
 
 # Install packages
 RUN apk --no-cache update && apk --no-cache add curl php php-fpm \
