@@ -3,8 +3,14 @@ name: docker-publish
 on:
   push:
     branches: [ master ]
+    paths:
+      - config/*
+      - Dockerfile
   pull_request:
     branches: [ master ]
+    paths:
+      - config/*
+      - Dockerfile
 
 env:
   REGISTRY: ghcr.io
