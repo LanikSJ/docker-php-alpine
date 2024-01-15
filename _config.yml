@@ -1,0 +1,6 @@
+---
+title: Docker Apache PHP and SupervisorD using Alpine
+description: Docker Apache PHP and SupervisorD for Docker Web App
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-slate
