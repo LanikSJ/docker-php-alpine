@@ -27,7 +27,7 @@ jobs:
         uses: dessant/lock-threads@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          process-only: 'issues, prs'
+          process-only: "issues, prs"
           issue-inactive-days: 30
           add-issue-labels: outdated
           pr-inactive-days: 30
