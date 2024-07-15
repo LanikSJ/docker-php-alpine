@@ -38,14 +38,14 @@ Then you can use it as a service from any Docker orchestration tools.
 
 ## Examples
 
-[AWS Elastic Container Service (ECS)](https://aws.amazon.com/ecs/)
-[Azure Container Service (ACS)](https://azure.microsoft.com/en-us/blog/azure-container-service-preview/)
-[Cloud Foundry’s Diego](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html)
-[CoreOS Fleet](https://coreos.com/using-coreos/clustering/)
-[Docker Swarm](https://www.docker.com/products/docker-swarm)
-[Google Container Engine](https://cloud.google.com/container-engine/)
-[Kubernetes](https://kubernetes.io)
-[Mesosphere Marathon](https://mesosphere.github.io/marathon/)
+- [AWS Elastic Container Service (ECS)](https://aws.amazon.com/ecs/)
+- [Azure Container Service (ACS)](https://azure.microsoft.com/en-us/blog/azure-container-service-preview/)
+- [Cloud Foundry’s Diego](https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html)
+- [CoreOS Fleet](https://coreos.com/using-coreos/clustering/)
+- [Docker Swarm](https://www.docker.com/products/docker-swarm)
+- [Google Container Engine](https://cloud.google.com/container-engine/)
+- [Kubernetes](https://kubernetes.io)
+- [Mesosphere Marathon](https://mesosphere.github.io/marathon/)
 
 Source: [8 Container Orchestration Tools to Know](https://www.linux.com/NewS/8-OPEN-SOURCE-CONTAINER-ORCHESTRATION-TOOLS-KNOW)
 
