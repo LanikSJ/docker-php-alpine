@@ -17,7 +17,8 @@
 
 ## 🎯 Purpose
 
-Based on this [Inspiration](https://github.com/TrafeX/docker-php-nginx) I wanted to create something current.
+Based on this [Inspiration](https://github.com/TrafeX/docker-php-nginx)
+I wanted to create something current.
 
 ## 📝 Description
 
