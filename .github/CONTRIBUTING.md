@@ -1,100 +1,108 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you
-wish to make via issue, email, or any other method with the owners of
-this repository before making a change.
+## Welcome
 
-Please note we have a code of conduct, please follow it in all your
-interactions with the project.
+We welcome contributions from everyone! Before contributing to this repository, please take a moment to review this guide.
+
+### Getting Started
+
+- **Discuss Changes First**: Before making a change, please discuss the change
+  you wish to make via [GitHub Issues](https://github.com/LanikSJ/docker-php-alpine/issues),
+  email, or any other method with the owners of this repository.
+
+- **Code of Conduct**: This project follows a code of conduct to ensure a welcoming
+  environment for all. Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+### Development Setup
+
+To contribute effectively:
+
+1. **Fork the Repository**: Create your own fork of [LanikSJ/docker-php-alpine](https://github.com/LanikSJ/docker-php-alpine)
+
+2. **Clone and Setup**:
+
+   ```bash
+   git clone https://github.com/your-username/docker-php-alpine.git
+   cd docker-php-alpine
+   ```
+
+3. **Build Locally**:
+
+   ```bash
+   docker build -t docker-php-alpine:local .
+   ```
+
+4. **Test Your Changes**:
+
+   ```bash
+   docker run -d -p 8080:80 --name test-alpine docker-php-alpine:local
+   # Visit http://localhost:8080 to verify
+   docker logs test-alpine
+   docker stop test-alpine && docker rm test-alpine
+   ```
+
+5. **Linting**: This project uses markdownlint for documentation. Run:
+
+   ```bash
+   npm install -g markdownlint-cli
+   markdownlint .
+   ```
+
+### Docker-Specific Guidelines
+
+- Ensure no vulnerabilities: Run security scans on your built image.
+- Minimize layers: Combine RUN commands where possible in the Dockerfile.
+- Use multi-stage builds if applicable for smaller final images.
+- Update base images regularly to include security patches.
 
 ## Pull Request Process
 
-1. Ensure any install or build dependencies are removed before the end of
-   the layer when doing a build.
-2. Update the README.md with details of changes to the interface, this
-   includes new environment variables, exposed ports, useful file
-   locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md
-   to the new version that this Pull Request would represent. The
-   versioning scheme we use is [SemVer](https://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two
-   other developers, or if you do not have permission to do that, you
-   may request the second reviewer to merge it for you.
+1. **Build and Test Locally**: Ensure your changes build successfully and the container runs correctly:
 
-## Code of Conduct
+   ```bash
+   docker build -t docker-php-alpine:test .
+   docker run -d -p 8080:80 docker-php-alpine:test
+   # Verify functionality
+   docker logs <container_id>
+   ```
 
-### Our Pledge
+2. **Vulnerability Scan**: Run security scans on your Docker image:
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project
-and our community a harassment-free experience for everyone, regardless of
-age, body size, disability, ethnicity, gender identity and expression,
-level of experience, nationality, personal appearance, race, religion, or
-sexual identity and orientation.
+   ```bash
+   docker scan docker-php-alpine:test
+   # Or use Trivy, Clair, etc.
+   ```
 
-### Our Standards
+3. **Update Documentation**: Update the README.md and any relevant documentation with details of changes, including:
+   - New environment variables
+   - Exposed ports
+   - Useful file locations
+   - Container parameters
+4. **Versioning**: Increase version numbers following [SemVer](https://semver.org/). For Docker images, use tags like:
+   - `latest`: Latest stable
+   - `edge`: For bleeding edge features
+   - `x.y.z`: Specific version tags
+5. **Code Review**: Submit your pull request and wait for review. The PR may be merged once it has the sign-off of two
+other developers, or if you do not have permission, you may request the second reviewer to merge it for you.
 
-Examples of behavior that contributes to creating a positive environment
-include:
+### Additional Guidelines
 
-- Using welcoming and inclusive language
-- Being respectful of differing viewpoints and experiences
-- Gracefully accepting constructive criticism
-- Focusing on what is best for the community
-- Showing empathy towards other community members
+- **Security**: Be mindful of security implications when adding new packages
+  or configurations.
+- **Size Optimization**: Keep the image size minimal by removing unnecessary
+  dependencies and combining RUN layers.
+- **Compatibility**: Test on different architectures if possible (amd64, arm64).
+- **Dependencies**: Regularly update base images and dependencies for security
+  patches.
 
-Examples of unacceptable behavior by participants include:
+## Getting Help
 
-- The use of sexualized language or imagery and unwelcome sexual attention
-  or advances
-- Trolling, insulting/derogatory comments, and personal or political
-  attacks
-- Public or private harassment
-- Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-- Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+- **Issues & Feature Requests**: Use [GitHub Issues](https://github.com/LanikSJ/docker-php-alpine/issues) for bugs,
+   questions, or feature requests.
+- **Discussions**: Join the community discussions on our [forum](https://forums.lanik.us).
+- **Documentation**: Check the [README.md](../README.md) and project wiki for more details.
 
-### Our Responsibilities
+## Recognition
 
-Project maintainers are responsible for clarifying the standards of
-acceptable behavior and are expected to take appropriate and fair
-corrective action in response to any instances of unacceptable behavior.
-
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other
-contributions that are not aligned to this Code of Conduct, or to ban
-temporarily or permanently any contributor for other behaviors that they
-deem inappropriate, threatening, offensive, or harmful.
-
-### Scope
-
-This Code of Conduct applies both within project spaces and in public
-spaces when an individual is representing the project or its community.
-Examples of representing a project or community include using an official
-project e-mail address, posting via an official social media account, or
-acting as an appointed representative at an online or offline event.
-Representation of a project may be further defined and clarified by
-project maintainers.
-
-### Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [forums.lanik.us](https://forums.lanik.us).
-All complaints will be reviewed and investigated and will result in a
-response that is deemed necessary and appropriate to the circumstances. The
-project team is obligated to maintain confidentiality with regard to the
-reporter of an incident. Further details of specific enforcement policies
-may be posted separately.
-
-Project maintainers who do not follow or enforce the Code of Conduct in
-good faith may face temporary or permanent repercussions as determined by
-other members of the project's leadership.
-
-### Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 1.4, available at [version]
-
-[homepage]: https://www.contributor-covenant.org
-[version]: https://www.contributor-covenant.org/version/1/4/
+Contributors are acknowledged in our release notes and on the project page. Major contributors may be added to a special
+contributors file. Thank you for your contributions!

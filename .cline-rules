@@ -1,0 +1,54 @@
+# Cline Rules for docker-php-alpine Repository
+
+## Repository Overview
+
+docker-php-alpine provides Docker images for PHP applications running on Alpine Linux.
+
+## Code Standards and Practices
+
+### Docker Standards
+
+- Follow Docker best practices for image optimization
+- Use appropriate base images and multi-stage builds
+- Implement security hardening practices
+- Document exposed ports and volumes clearly
+
+### Documentation Standards
+
+- Include clear Docker usage examples and docker-compose files
+- Document PHP version compatibility and extensions
+- Provide build and deployment instructions
+- Use markdown formatting consistently
+
+### Markdown Compliance Requirements
+
+- **ALL markdown files (.md) MUST pass markdownlint validation with zero errors or warnings**
+- Run `markdownlint <filename>` on every markdown file before considering it complete
+- Follow the project's `.markdownlint.json` configuration strictly
+- Address ALL markdownlint issues immediately - no exceptions or workarounds
+- Common requirements include:
+  - Maximum line length of 80 characters (MD013)
+  - Consistent heading styles and hierarchy
+  - Proper list formatting and indentation
+  - Blank lines around headings and code blocks
+  - Consistent link and reference formatting
+  - No trailing whitespace
+  - Files must end with newlines
+  - Proper table formatting when applicable
+- Use `markdownlint --fix <filename>` for auto-fixable issues when available
+- Validate markdown files in CI/CD pipelines where applicable
+
+## Development Guidelines
+
+### When Making Changes
+
+- Preserve existing functionality unless explicitly asked to change it
+- Update documentation when changing PHP versions or extensions
+- **Always run markdownlint and fix all issues in markdown files before considering changes complete**
+
+### Container Standards
+
+- Keep images minimal and secure using Alpine Linux
+- Test images across different architectures
+- Implement proper user permissions and security contexts
+- Provide clear upgrade paths for new PHP versions
