@@ -25,16 +25,21 @@ in the GitHub directory (`.github/*`).
 ### GitHub-Specific Requirements
 
 #### Templates and Workflows
+
 - Ensure issue and pull request templates provide clear, actionable guidelines
 - Include Docker/container-specific troubleshooting sections in templates
 - Reference existing project documentation and standards
+
 #### Documentation Standards
+
 - .github/CONTRIBUTING.md must include:
   - Docker development environment setup instructions
   - Container testing requirements and procedures
   - Security scanning and vulnerability assessment guidelines
   - Multi-platform testing requirements
+
 #### Automation and CI/CD
+
 - Project workflows must include proper container testing stages
 - Security scanning must be integrated into automated checks
 - Multi-platform container builds must be validated
@@ -42,6 +47,7 @@ in the GitHub directory (`.github/*`).
 ### Quality Gates (MANDATORY)
 
 **For ANY change made to `.github/*` files:**
+
 1. ✅ Run markdownlint validation (if .md file)
 2. ✅ Ensure Docker standards are followed (if applicable)
 3. ✅ Verify contribution guidelines are up-to-date and accurate
@@ -57,6 +63,7 @@ in the GitHub directory (`.github/*`).
 ### Reference Documentation
 
 See root `.cline-rules` file for additional project-wide standards including:
+
 - Docker container standards
 - Service configuration requirements
 - Development guidelines
