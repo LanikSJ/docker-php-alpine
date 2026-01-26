@@ -40,7 +40,7 @@ jobs:
           codeql-${{ matrix.language }}-
 
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@cdefb33c0f6224e58673d9004f47f7cb3e328b89 # v4.31.10
+      uses: github/codeql-action/init@19b2f06db2b6f5108140aeb04014ef02b648f789 # v4.31.11
       with:
         languages: ${{ matrix.language }}
         # Enable debug logging for troubleshooting
@@ -50,7 +50,7 @@ jobs:
     # Create ./.github/codeql-config.yml if you need custom queries or settings
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@cdefb33c0f6224e58673d9004f47f7cb3e328b89 # v4.31.10
+      uses: github/codeql-action/analyze@19b2f06db2b6f5108140aeb04014ef02b648f789 # v4.31.11
       with:
         category: "/language:${{ matrix.language }}"
         upload: true
