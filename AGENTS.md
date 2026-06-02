@@ -1,4 +1,4 @@
-# AI Rules & Project Standards for docker-php-alpine
+# Agent Rules & Project Standards for docker-php-alpine
 
 ## Repository Overview
 
