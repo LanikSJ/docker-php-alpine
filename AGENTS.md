@@ -2,8 +2,8 @@
 
 ## Repository Overview
 
- docker-php-alpine provides Docker images for PHP applications
- running on Alpine Linux.
+docker-php-alpine provides Docker images for PHP applications
+running on Alpine Linux.
 
 ## Code Standards and Practices
 
@@ -24,7 +24,7 @@
 ### Markdown Compliance Requirements (MANDATORY)
 
 - **ALL markdown files (.md) MUST pass markdownlint validation**
-   with zero errors or warnings
+  with zero errors or warnings
 - Run `markdownlint <filename>` on every markdown file before considering it complete
 - Follow the project's `.markdownlint.json` configuration strictly
 - Address ALL markdownlint issues immediately - no exceptions or workarounds
@@ -48,7 +48,7 @@
 - Preserve existing functionality unless explicitly asked to change it
 - Update documentation when changing PHP versions or extensions
 - **Always run markdownlint and fix all issues in markdown files**
-   before considering changes complete
+  before considering changes complete
 
 ### Container Standards
 
