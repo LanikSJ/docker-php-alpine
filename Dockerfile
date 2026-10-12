@@ -9,9 +9,17 @@ RUN apk --no-cache update && apk --no-cache add curl php php-fpm \
 # Configure nginx
 COPY config/nginx.conf /etc/nginx/nginx.conf
 
-# Configure PHP-FPM
-COPY config/fpm-pool.conf /etc/php/php-fpm.d/zzz_custom.conf
-COPY config/php.ini /etc/php/conf.d/zzz_custom.ini
+# Configure PHP-FPM and PHP.
+# PHP config dirs are versioned (/etc/phpNN/...) and move with every
+# PHP bump, so install via glob instead of hardcoding a path.
+# The pool config replaces Alpine's default www.conf.
+COPY config/fpm-pool.conf /tmp/zzz_custom.conf
+COPY config/php.ini /tmp/zzz_custom.ini
+RUN FPM_D="$(ls -d /etc/php*/php-fpm.d | head -n 1)" \
+    && PHP_D="$(ls -d /etc/php*/conf.d | head -n 1)" \
+    && cp /tmp/zzz_custom.conf "$FPM_D/www.conf" \
+    && cp /tmp/zzz_custom.ini "$PHP_D/zzz_custom.ini" \
+    && rm -f /tmp/zzz_custom.conf /tmp/zzz_custom.ini
 
 # Configure supervisord
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
