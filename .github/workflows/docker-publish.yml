@@ -5,10 +5,13 @@ on:
     branches: [ master ]
     paths:
       - Dockerfile
+      - config/**
   pull_request:
     branches: [ master ]
     paths:
       - .github/workflows/docker-publish.yml
+      - Dockerfile
+      - config/**
   workflow_dispatch:
 
 env:
@@ -16,7 +19,42 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Build Image
+        run: docker build -t docker-php-alpine:test .
+
+      - name: Start Container
+        run: |
+          docker run -d --name smoke -p 8080:80 docker-php-alpine:test
+          echo '<?php echo "PHP OK";' | docker exec -i smoke sh -c 'cat > /var/www/html/test.php'
+
+      - name: Verify PHP Serves Requests
+        run: |
+          for i in $(seq 1 15); do
+            if curl -fsS http://127.0.0.1:8080/test.php | grep -q 'PHP OK'; then
+              echo "Smoke test passed"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "Smoke test failed"
+          docker logs smoke
+          exit 1
+
+      - name: Cleanup
+        if: always()
+        run: docker rm -f smoke || true
+
   build-and-push-image:
+    needs: smoke-test
     runs-on: ubuntu-latest
     permissions:
       contents: read
