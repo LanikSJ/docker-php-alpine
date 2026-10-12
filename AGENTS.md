@@ -50,6 +50,13 @@ running on Alpine Linux.
 - **Always run markdownlint and fix all issues in markdown files**
   before considering changes complete
 
+### Local Docker Environment
+
+- Docker runs through Colima on development machines
+- Start the daemon with `colima start` and stop it with `colima stop` as needed
+- Verify image changes with a local `docker build` and a smoke test (run the
+  container and curl a PHP page) whenever Docker is available
+
 ### Container Standards
 
 - Keep images minimal and secure using Alpine Linux.
@@ -62,6 +69,9 @@ running on Alpine Linux.
 - Use the conventional commit format: `type(scope): description`
 - Common types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`
 - Commit descriptions should be a bullet list of changes made
+- Bullet lines in commit messages may be unlimited width
+- Keep each commit bullet on a single line; the 80-character
+  line limit applies to markdown files, not commit messages
 - Example:
 
   ```text
